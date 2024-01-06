@@ -1,7 +1,7 @@
 import React from 'react';
 // import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContactThunk } from 'reduxx/operations/contactsThunk';
+import { addContact } from 'reduxx/operations/contactsThunk';
 import { getContacts } from 'reduxx/selectors/selectors';
 
 import css from './ContactForm.module.css';
@@ -25,7 +25,7 @@ export const ContactForm = () => {
             return;
         }
 
-        dispatch(addContactThunk(newContact));
+        dispatch(addContact(newContact));
 
         e.target.reset();
     };
