@@ -10,8 +10,8 @@ function ContactItem({ id, name, number }) {
 
     return (
         <li className={css.contacts__item}>
-            <span className={css.contacts_span}>{name}</span>
-            <span className={css.contacts_span}>{number}</span>
+            <span className={css.contacts__name}>{name}</span>
+            <span className={css.contacts__number}>{number}</span>
             <button
                 className={css.contacts__btn}
                 onClick={() => dispatch(deleteContact(id))}

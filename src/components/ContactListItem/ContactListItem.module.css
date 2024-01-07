@@ -3,14 +3,17 @@
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    font-weight: 500;
     padding: 10px;
 }
 
-.contacts__span {
-    margin-left: 10px;
-    font-size: 15px;
+.contacts__name {
+    font-size: 16px;
     font-weight: 400;
+}
+
+.contacts__number {
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .contacts__btn {

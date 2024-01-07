@@ -13,11 +13,11 @@ export const Filter = () => {
     };
 
     return (
-        <label className={css.label} >
-            <h2>Search</h2>
+        <label className={css.filter__label} >
+            Search
             <input
                 placeholder="Find contacts by name"
-                className={css.input}
+                className={css.filter__input}
                 value={filter.filter}
                 type="search"
                 onChange={showFilteredContacts}

@@ -31,22 +31,6 @@ export const ContactForm = () => {
 
         setName('');
         setNumber('');
-
-        // const newContact = {
-        //     name: e.target.elements.name.value,
-        //     number: e.target.elements.number.value,
-        // };
-
-        // const normalizedName = e.target.elements.name.value.toLowerCase();
-
-        // if (contacts.find(contact => contact.name.toLowerCase() === normalizedName)) {
-        //     alert(`${newContact.name} is already in contacts.`);
-        //     return;
-        // }
-
-        // dispatch(addContact(newContact));
-
-        // e.target.reset();
     };
 
     return (
