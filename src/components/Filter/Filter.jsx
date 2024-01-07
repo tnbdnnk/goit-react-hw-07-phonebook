@@ -13,14 +13,14 @@ export const Filter = () => {
     };
 
     return (
-        <label className={css.label} htmlFor="filterInput">
-            Find contacts by name
+        <label className={css.label} >
+            <h2>Search</h2>
             <input
-            id="filterInput"
-            className={css.input}
-            value={filter}
-            type="text"
-            onChange={showFilteredContacts}
+                placeholder="Find contacts by name"
+                className={css.input}
+                value={filter.filter}
+                type="search"
+                onChange={showFilteredContacts}
             />
         </label>
     );

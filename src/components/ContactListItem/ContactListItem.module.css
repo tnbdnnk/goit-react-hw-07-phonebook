@@ -1,9 +1,4 @@
-.contacts__list {
-    letter-spacing: none;
-    padding: 0;
-}
-
-/* .contacts__item {
+.contacts__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,4 +30,4 @@
     background-color: #5d8d94;
     color: #ffffff;
     outline: none;
-} */
+}
