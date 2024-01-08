@@ -15,15 +15,25 @@ export const ContactForm = () => {
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
 
-    const notify = () => toast('Name exists in your list!');
+    const notifyNameExist = () => toast('Name exists in your list!');
+    const notifyNumberExist = () => toast('Number exists in your list!');
+
 
     const handleFormSubmit = e => {
         e.preventDefault();
 
-        const isExist = contacts.some(contact => contact.name === name);
+        const isNameExist = contacts.some(
+            contact => contact.name.toLowerCase() === name.toLowerCase()
+        );
 
-        if (isExist) {
-            notify();
+        const isNumberExist = contacts.some(
+            contact => contact.number === number
+        );
+
+        if (isNameExist) {
+            notifyNameExist();
+        } else if (isNumberExist) {
+            notifyNumberExist();
         } else {
             const newContact = { name, number };
             dispatch(addContact(newContact));
