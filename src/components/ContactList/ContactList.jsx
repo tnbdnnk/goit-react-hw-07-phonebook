@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from 'reduxx/operations/contactsThunk';
 import { getContacts, getFilter, getLoading, getError } from 'reduxx/selectors/selectors';
 import ContactItem from 'components/ContactListItem/ContactListItem';
+
 import css from './ContactList.module.css';
 
 export default function ContactList() {
